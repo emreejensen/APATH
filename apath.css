@@ -1,0 +1,247 @@
+/* General Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    height: 100%;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #2C3E50;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #34495E;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-weight: bold;
+    padding: 14px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1ABC9C;
+}
+
+/* Form Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Unified Form Field Styling */
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1ABC9C;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Error Styling */
+.error {
+    color: #FF0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    padding: 14px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #16A085;
+}
+
+/* Link Styling */
+p a {
+    color: #1ABC9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1ABC9C;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #1ABC9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2C3E50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+table a {
+    color: #1ABC9C;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table a:hover {
+    background-color: #1ABC9C;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    input,
+    select,
+    textarea,
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Required Field Indicator */
+.required {
+    color: red;
+}
